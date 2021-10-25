@@ -1,0 +1,32 @@
+{
+  "name": "svelte.run",
+  "version": "0.1.0",
+  "private": false,
+  "author": {
+    "name": "Nicholas Berlette",
+    "email": "nick@berlette.com",
+    "url": "https://svelte.run"
+  },
+  "homepage": "https://svelte.run",
+  "repository": "https://github.com/nberlette/svelte.run",
+  "readme": "https://github.com/nberlette/svelte.run#readme",
+  "bugs": "https://github.com/nberlette/svelte.run/issues",
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w & sirv public -s --no-clear",
+    "start": "sirv public --no-clear --https"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^11.0.0",
+    "rollup": "^2.3.4",
+    "rollup-plugin-css-only": "^3.1.0",
+    "rollup-plugin-livereload": "^2.0.0",
+    "rollup-plugin-svelte": "^7.0.0",
+    "rollup-plugin-terser": "^7.0.0",
+    "rollup-plugin-styles": "^3.14.1",
+    "svelte": "latest",
+    "sirv-cli": "latest"
+  }
+}
