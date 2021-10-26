@@ -16,14 +16,13 @@
 		top: 0.5em;
 		left: 0;
 		letter-spacing: -0.033em;
+    -webkit-animation: 0.5s bubble infinite running normal ease-in-out;
+    animation: 0.5s bubble infinite running normal ease-in-out;
 	}
 		h1 a {
 			text-decoration: none !important;
 			color: #ff3e00aa !important;
 			transition: all .3s ease-in;
-      -webkit-animation: 0.5s bubble infinite running alternate ease-in-out;
-      animation: 0.5s bubble infinite running alternate ease-in-out;
-      animation-play-state: running;
 		}
 		h1 a:hover {
 			color: #ff3e00ff !important;
@@ -35,8 +34,8 @@
 			transform: scale3d(1, 1, 1);
 		}
 		50% {
-			-webkit-transform: scale3d(1.05, 1.05, 1.05);
-			transform: scale3d(1.05, 1.05, 1.05);
+			-webkit-transform: scale3d(1.1, 1.1, 1.1);
+			transform: scale3d(1.1, 1.1, 1.1);
 		}
 		to {
 			-webkit-transform: scale3d(1, 1, 1);
@@ -49,8 +48,8 @@
 			transform: scale3d(1, 1, 1);
 		}
 		50% {
-			-webkit-transform: scale3d(1.05, 1.05, 1.05);
-			transform: scale3d(1.05, 1.05, 1.05);
+			-webkit-transform: scale3d(1.1, 1.1, 1.1);
+			transform: scale3d(1.1, 1.1, 1.1);
 		}
 		to {
 			-webkit-transform: scale3d(1, 1, 1);

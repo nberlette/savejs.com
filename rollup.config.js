@@ -6,8 +6,10 @@ import { terser } from 'rollup-plugin-terser';
 import sveltePreprocess from 'svelte-preprocess';
 import typescript from '@rollup/plugin-typescript';
 import css from 'rollup-plugin-css-only';
+import { windi } from 'svelte-windicss-preprocess';
+import windiConfig from './windi.config.js';
 
-const production = !process.env.ROLLUP_WATCH;
+const production = !process.env.ROLLUP_WATCH && !process.env.NODE_ENV;
 
 function serve() {
 	let server;
@@ -40,7 +42,10 @@ export default {
 	},
 	plugins: [
 		svelte({
-			preprocess: sveltePreprocess({ sourceMap: !production }),
+			preprocess: [
+				windi(windiConfig),
+				sveltePreprocess({ sourceMap: !production })
+			],
 			compilerOptions: {
 				// enable run-time checks when not in production
 				dev: !production

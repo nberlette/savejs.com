@@ -36,13 +36,14 @@
     .bottom .link a {
       color: var(--accent-2, #666);
       text-decoration: underline;
-      text-decoration-color: var(--accent-1);
+      text-decoration-color: var(--accent-4);
       text-transform: lowercase;
       cursor: pointer;
       outline: none;
     }
     .bottom .link a:hover {
       color: var(--accent-1, #ff3e00);
+      text-decoration-color: transparent;
     }
 </style>
 

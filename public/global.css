@@ -1,3 +1,18 @@
+/* @font-face {
+  font-family: "VitesseSSm";
+  font-style: normal;
+  src: local('Vitesse SSm'), 
+       url('https://fontapi.s3.amazonaws.com/Vitesse/VitesseSSm-Black_Web.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Idlewild';
+  src: local('Idlewild'), 
+       url('https://fontapi.s3.amazonaws.com/Idlewild/Idlewild-Light_Web.woff2') format('woff2');
+  font-style: normal;
+} */
+
+
 html, body {
 	position: relative;
 	width: 100%;
@@ -13,7 +28,7 @@ body {
 }
 
 a {
-	color: rgb(0,100,200);
+	color: #ff3e00;
 	text-decoration: none;
 }
 
@@ -22,7 +37,7 @@ a:hover {
 }
 
 a:visited {
-	color: rgb(0,80,160);
+	color: #ff3e00
 }
 
 label {
