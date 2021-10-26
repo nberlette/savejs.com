@@ -1,12 +1,12 @@
 {
-  "name": "savejs.com",
-  "version": "0.1.0",
+  "name": "save.js",
+  "version": "0.2.0",
   "private": false,
   "license": "MIT",
   "author": {
     "name": "Nicholas Berlette",
     "email": "nick@berlette.com",
-    "url": "https://savejs.com"
+    "url": "https://berlette.com"
   },
   "homepage": "https://savejs.com",
   "repository": "https://github.com/nberlette/savejs.com",
@@ -14,28 +14,31 @@
   "bugs": "https://github.com/nberlette/savejs.com/issues",
   "scripts": {
     "build": "rollup -c",
-    "dev": "rollup -c -w & yarn start",
-    "start": "sirv public --no-clear --https",
+    "dev": "rollup -c -w",
+    "start": "sirv public --no-clear --host --https",
     "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^17.0.0",
-    "@rollup/plugin-json": "^4.1.0",
-    "@rollup/plugin-node-resolve": "^11.0.0",
-    "@rollup/plugin-typescript": "^8.0.0",
-    "@tsconfig/svelte": "^2.0.0",
-    "rollup": "^2.3.4",
-    "rollup-plugin-css-only": "^3.1.0",
-    "rollup-plugin-livereload": "^2.0.0",
-    "rollup-plugin-svelte": "^7.0.0",
-    "rollup-plugin-terser": "^7.0.0",
-    "sirv-cli": "latest",
-    "svelte": "latest",
-    "svelte-check": "^2.0.0",
-    "svelte-local-storage-store": "~0.2.4",
-    "svelte-preprocess": "^4.0.0",
-    "svelte-windicss-preprocess": "~4.1.0",
-    "tslib": "^2.0.0",
-    "typescript": "^4.0.0"
+    "@rollup/plugin-commonjs": "17.1.0",
+    "@rollup/plugin-json": "4.1.0",
+    "@rollup/plugin-node-resolve": "11.2.1",
+    "@rollup/plugin-typescript": "8.3.0",
+    "@tailwindcss/typography": "0.4.1",
+    "@tsconfig/svelte": "2.0.1",
+    "rollup": "2.53.2",
+    "rollup-plugin-css-only": "3.1.0",
+    "rollup-plugin-livereload": "2.0.5",
+    "rollup-plugin-svelte": "7.1.0",
+    "rollup-plugin-terser": "7.0.2",
+    "svelte": "3.44.0",
+    "svelte-check": "2.2.7",
+    "svelte-local-storage-store": "0.2.4",
+    "svelte-preprocess": "4.9.8",
+    "svelte-windicss-preprocess": "4.1.0",
+    "tslib": "2.3.1",
+    "typescript": "4.4.4"
+  },
+  "dependencies": {
+    "sirv-cli": "1.0.14"
   }
 }
